@@ -1,5 +1,4 @@
 
-
 @import 'https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i';
 
 
@@ -17,7 +16,7 @@ h4 {
     text-transform: capitalize;
     letter-spacing: 2px;
     position: relative;
-    color: black;
+    color: white;
     margin-left: 40px;
     font-weight: 700;
 }
@@ -225,7 +224,7 @@ nav li a {
 }
 
 .bg-nav {
-    background: grey;
+    /* background: grey; */
     border-bottom: 1px solid white;
 }
 
@@ -244,7 +243,7 @@ a:hover {
 }
 
 a.active {
-    color: #425BB5;
+    color: yellow;
 }
 
 
@@ -273,8 +272,8 @@ a.active {
 
 #about {
     padding: 100px 0;
-    background-color:white;
-    /* color:black; */
+    background-color:black;
+    color:white;
 }
 
 .about-img-div img {
@@ -283,7 +282,7 @@ a.active {
 
 .about-border {
     position: absolute;
-    border: 10px solid orange;
+    /* border: 10px solid black; */
     width: 400px;
     height: 400px;
     top: 40px;
@@ -297,8 +296,8 @@ a.active {
 
 #experience {
     padding: 100px 0;
-    background:white; /* black color add kiya*/
-    color:; /*maine likha hai color add kiya hai*/
+    background:black; /* black color add kiya*/
+    color:white; /*maine likha hai color add kiya hai*/
 }
 
 .experience-row {
@@ -333,7 +332,7 @@ a.active {
 }
 
 .timeline:before {
-    background-color:black;/*ye white line hai*/
+    background-color:white;/*ye white line hai*/
     content: '';
     margin-left: -1px;
     position: absolute;
@@ -350,11 +349,11 @@ a.active {
 .timeline-event:hover .timeline-event-icon {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    background-color: #425BB5;
+    background-color: green;
 }
 
 .timeline-event:hover .timeline-event-thumbnail {
-    box-shadow: inset 40em 0 0 0 #425BB5;
+    box-shadow: inset 40em 0 0 0 green;
 }
 
 .timeline-event-copy {
@@ -389,7 +388,7 @@ a.active {
     transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
-    background-color: red;
+    background-color: yellow;
     outline: 10px solid #f3f3f3;
     display: block;
     margin: 0.5em 0.5em 0.5em -0.5em;
@@ -410,7 +409,7 @@ a.active {
     color: white;
     font-size: 12px;
     font-weight: bold;
-    background-color: black;
+    background-color: red;
     box-shadow: inset 0 0 0 0em #425BB5;
     display: inline-block;
     margin-bottom: 1.2em;
@@ -423,6 +422,8 @@ a.active {
 
 #projects {
     padding: 100px 0;
+    background:black;
+    color:white;
 }
 
 .portfolio .categories-grid span {
@@ -453,7 +454,7 @@ a.active {
 .portfolio .categories-grid .categories ul li a.active {
     background-color:green;
     padding: 0px 20px;
-    color: grey;
+    color: white;
     text-decoration: none;
 }
 
@@ -474,13 +475,13 @@ a.active {
     left: 0px;
     height: 100%;
     width: 100%;
-    background-color:grey;
+    background-color:#272829;
     -webkit-transform: translateY(100%);
     transform: translateY(100%);
     opacity: 0;
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-    color: #333;
+    color: green;
 }
 
 .portfolio_item .portfolio_item_hover .item_info {
@@ -509,9 +510,9 @@ a.active {
 .portfolio_item .portfolio_item_hover .item_info em {
     font-style: normal;
     display: inline-block;
-    background-color: #425BB5;
+    background-color: green;
     padding: 5px 20px;
-    color: #fff;
+    color: white;
     margin-top: 10px;
     -webkit-transform: translateY(100px);
     transform: translateY(100px);
@@ -606,6 +607,8 @@ a.active {
 
 #contact {
     padding: 100px 0;
+    background:black;
+    color:white;
 }
 
 #contact-form input,
@@ -696,7 +699,7 @@ fieldset {
 }
 
 #submit {
-    background-color: black;
+    background-color: green;
     color: white;
     padding: 5px 20px;
     border-radius: 0;
@@ -805,8 +808,8 @@ fieldset {
 
 /* CSS for black color button */
 .black-btn {
-    background-color: #000000; /* Black color */
-    color: #ffffff; /* Text color, usually white on black background */
+    background-color: green; /* Black color */
+    color: black; /* Text color, usually white on black background */
     padding: 10px 20px; /* Adjust padding according to your design */
     border: none; /* No border */
     border-radius: 5px; /* Rounded corners */
@@ -821,16 +824,22 @@ fieldset {
 
 /* CSS for hover effect */
 .black-btn:hover {
-    background-color: #333333; /* Darker shade of black on hover */
-    color: #ffffff; /* Text color, usually white on hover */
+    background-color: red; /* Darker shade of black on hover */
+    color: white; /* Text color, usually white on hover */
 }
 
 #msg {
-    color: green;
+    color: red;
     margin-top: 20px;
     display: block;
 }
-body{
-    background-image: linear-gradient(to right, #FF9130 0%, #fcb69f 100%);
+#submit:hover {
+    background-color: red; /* Darker shade of black on hover */
+    color: #ffffff; /* Text color, usually white on hover */
+}
+
+.form-control{
+    color:#F0EEED;
+    background:#272829;
 }
   
